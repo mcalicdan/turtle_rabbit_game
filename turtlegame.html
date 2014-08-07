@@ -1,0 +1,22 @@
+<script>
+  var rabbit, turtle;
+
+  function Animal(name, speed, distraction) {
+      this.name = name;
+      this.speed = speed;
+      this.distraction = distraction;
+      this.position = 0;
+      this.time = this.distraction / this.speed
+  }
+
+  rabbit = new Animal("Timmy", 4, 12);
+  turtle = new Animal("Yurtle", 1, 2);
+
+  if (rabbit.time < turtle.time) {
+      console.log("Timmy wins");
+  } else if (rabbit.time == turtle.time) {
+      console.log("Timmy and Yurtle tie");
+  } else {
+      console.log("Yurtle wins");
+  }
+</script>
